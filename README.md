@@ -31,12 +31,15 @@ Para verificar se o banco de dados PostgreSQL está funcionando corretamente, vo
    docker ps
 
 2. Acesse o terminal do container do banco de dados:
-docker exec -it docker-fullstack-db-1 sh
+   ```bash
+   docker exec -it docker-fullstack-db-1 sh
 
 3. Acesse o PostgreSQL dentro do container:
-psql -U user -d appdb
+   ```bash
+   psql -U user -d appdb
 
 4. Execute uma query de teste:
-SELECT NOW();
+   ```bash
+   SELECT NOW();
 
 Se tudo estiver funcionando corretamente, o comando SELECT NOW(); irá retornar a data e hora atual do servidor.
